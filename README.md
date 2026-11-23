@@ -64,3 +64,5 @@ Drawn for two features only (`hand_ratio` and `aspect_ratio`), so they only illu
 1. Install the libraries: `pip install -r requirements.txt`
 2. Put the dataset into a folder called `Rock Paper Scissors/`, with one subfolder per gesture (`rock`, `paper`, `scissors`)
 3. Run: `python rock_paper_scissors.py`
+
+The images in sample_images/ are only examples. The full dataset is needed to run the classifier.
