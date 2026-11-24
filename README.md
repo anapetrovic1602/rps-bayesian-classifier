@@ -2,6 +2,10 @@
 
 A simple image classification project that recognizes hand gestures for rock, paper and scissors. The hand is separated from the background, a few numbers (features) are measured on it, and a Bayes classifier written in NumPy decides which gesture it is.
 
+## Dataset
+
+~2100 images of hand gestures, 3 classes (rock, paper, scissors).
+
 ## How It Works
 
 ### 1. Preprocessing
@@ -37,6 +41,7 @@ A simple image classification project that recognizes hand gestures for rock, pa
 | Train (80%) | 98.94% |
 | Test (20%) | **98.36%** |
 
+
 ### Preprocessing
 ![Preprocessing](preprocessing.png)
 
@@ -51,13 +56,19 @@ Drawn for two features only (`hand_ratio` and `aspect_ratio`), so they only illu
 ### Misclassified examples
 ![Misclassified](misclassified.png)
 
+## Limitations
+
+Results come from a single random split (seed 42) and features are hand-crafted. The images have a simple, clean background, so the accuracy may not hold for real-world photos.
+
 ## Project Structure
 
 | File / Folder | Description |
 | :--- | :--- |
 | `rock_paper_scissors.py` | Preprocessing, feature extraction and classifier |
 | `requirements.txt` | Python libraries needed |
+| `sample_images/` | Two example images per gesture (just for illustration) |
 | `README.md` | This file |
+
 
 ## How To Run
 
